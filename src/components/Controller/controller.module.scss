@@ -1,0 +1,45 @@
+.controllers {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 340px;
+  z-index: 20;
+  background-color: #fff;
+  box-shadow: 0 0 10px #00000030;
+  padding: 25px 20px;
+  border-radius: 20px;
+  .title {
+    font-size: 21px;
+    margin-bottom: 15px;
+  }
+  .form {
+    display: inline-flex;
+    flex-direction: column;
+		gap: 10px;
+		.inp{
+			display: flex;
+			align-items: center;
+			gap: 5px;
+			b{
+				width: 20px;
+			}
+		}
+		input {
+			font-size: 18px;
+			width: 100%;
+		}
+    .btn {
+			border: none;
+			background-color: #000;
+			color: #fff;
+			border-radius: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 5px 3px;
+			gap: 10px;
+			font-size: 16px;
+			cursor: pointer;
+    }
+  }
+}
