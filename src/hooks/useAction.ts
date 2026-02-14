@@ -1,10 +1,10 @@
 import { bindActionCreators } from '@reduxjs/toolkit'
 import { useMemo } from 'react'
 import { useDispatch } from 'react-redux'
-import { actions as position } from '../redux/position/position.slice'
+import { actions as Point } from '../redux/point/points.slice'
 
 const rootActions = {
-  ...position
+  ...Point
 }
 export const useActions = () => {
   const dispatch = useDispatch()

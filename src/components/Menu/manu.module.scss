@@ -1,5 +1,5 @@
-.menu{
-	position: absolute;
+.menu {
+  position: absolute;
   top: 250px;
   left: 20px;
   width: 340px;
@@ -8,13 +8,14 @@
   box-shadow: 0 0 10px #00000030;
   padding: 25px 20px;
   border-radius: 20px;
-	.title {
+  .title {
     font-size: 21px;
     margin-bottom: 15px;
+    user-select: none;
   }
-	.box{
-		display: flex;
-		flex-direction: column;
-		gap: 15px;
-	}
+  .box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
 }

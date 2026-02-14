@@ -1,14 +1,15 @@
 import { useAppSelector } from '../../hooks/useSelector'
-import scss from './manu.module.scss'
 import { Item } from './Item/item'
+import scss from './manu.module.scss'
 
 export function Menu() {
-  const { position } = useAppSelector(state => state.position)
+  const { points } = useAppSelector(state => state.point)
 
-  const items = position.map(item => <Item item={item} />)
+  const items = points.map(item => <Item key={item.id} item={item} />)
+
   return (
     <>
-      {!!position.length && (
+      {!!points.length && (
         <div className={scss.menu}>
           <h1 className={scss.title}>Список добавленных точек</h1>
           <div className={scss.box}>{items}</div>

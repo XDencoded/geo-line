@@ -1,8 +1,8 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
-import { reducer as positionReducer } from './position/position.slice'
+import { reducer as PointReducer } from './point/points.slice'
 
 const reducers = combineReducers({
-  position: positionReducer
+  point: PointReducer
 })
 export const store = configureStore({
   reducer: reducers

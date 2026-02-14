@@ -1,0 +1,32 @@
+
+.form {
+	display: inline-flex;
+	flex-direction: column;
+	gap: 10px;
+	.inp{
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		b{
+			width: 20px;
+			user-select: none;
+		}
+		input {
+			font-size: 18px;
+			width: 100%;
+		}
+	}
+	.btn {
+		border: none;
+		background-color: #000;
+		color: #fff;
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 5px 3px;
+		gap: 10px;
+		font-size: 16px;
+		cursor: pointer;
+	}
+}

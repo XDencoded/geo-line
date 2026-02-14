@@ -1,5 +1,6 @@
 export type TItem = {
-	id: number
-	longitude: number,
+  id?: string
+  longitude: number
   latitude: number
+  type?: 'del' | 'update' | 'add' | null
 }
